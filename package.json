@@ -2,9 +2,11 @@
   "name": "typest",
   "version": "0.0.1",
   "description": "Strictly Typed HTTP Client for OpenAPI-documented Backends",
-  "main": "index.js",
+  "homepage": "https://github.com/idonoghue/typest",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "rollup -c -w",
+    "build": "rollup -c"
   },
   "keywords": [
     "http",
@@ -14,6 +16,18 @@
     "types",
     "openapi"
   ],
+  "main": "dist/my-lib.cjs.js",
+  "module": "dist/my-lib.esm.js",
+  "browser": "dist/my-lib.umd.js",
   "author": "Isaac Donoghue",
-  "license": "ISC"
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "eslint": "^7.29.0",
+    "rollup": "^2.52.2",
+    "ts-node": "^10.0.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.4"
+  }
 }
