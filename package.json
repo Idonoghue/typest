@@ -1,0 +1,19 @@
+{
+  "name": "typest",
+  "version": "0.0.1",
+  "description": "Strictly Typed HTTP Client for OpenAPI-documented Backends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http",
+    "client",
+    "type",
+    "typed",
+    "types",
+    "openapi"
+  ],
+  "author": "Isaac Donoghue",
+  "license": "ISC"
+}
